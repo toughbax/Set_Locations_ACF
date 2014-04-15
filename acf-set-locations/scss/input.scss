@@ -1,0 +1,196 @@
+//////////////////////////////////////
+//////         COLORS         ////////
+//////////////////////////////////////
+
+$orange: #ee7a3a;
+
+$pink: #ee4d9b;
+
+$purple: #783887;
+
+$lightblue: #00b5e1;
+$darkblue: #374ea1;
+
+$yellow: #ffc727;
+
+$lightgreen: #58bd7d;
+$darkgreen: #00634f;
+
+
+
+$lightgrey: #b6b5b5;
+$grey: #403f3f;
+$darkgrey: #191717;
+$darkergrey: #111010;
+$offblack: #0b0b0b;
+
+$red: #df002b;
+
+// Main Text Color
+$maintext: #000;
+
+
+
+
+
+
+#location-map{
+	background: #dfdfe0;
+	// overflow: scroll;
+	.map-wrap{
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		// margin-bottom: 300px;
+	}
+
+	.map-locations{
+		padding: 15px;
+		padding-top: 25px;
+		border: 1px solid black;
+		text-align: center;
+		min-height: 175px;
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: #DFDFE0
+	}
+
+
+	.image-map{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.to-metrotown{
+		display: block;
+		height: 220px;
+		left: 45.4%;
+		position: absolute;
+		top: 48.9%;
+		width: 220.4px;
+	}
+
+	.single-location{
+		// position: static;
+		position: absolute;
+		display: inline-block;
+		cursor: pointer;
+		z-index: 99;
+
+
+
+		.roll-over{
+			display: none;
+			padding: 2px;
+			position: absolute;
+			z-index: 9999;
+
+			left: 35px;
+			min-width: 150px;
+			bottom: 35px;
+
+			h3{
+				bottom: 2px;
+				left: 2px;
+				right: 2px;
+
+				color: white;
+				padding: 10px;
+				background: rgba(0,0,0,.5);
+				text-align: center;
+				font-size: 14px;
+
+			}
+			
+			&.has-thumb{
+
+				top: -150px;
+				right: -150px;
+
+				h3{
+					position: absolute;
+				}
+			}
+
+			&.restaurants{
+				background: $orange;
+			}
+			&.shopping-centres{
+				background: $pink;
+			}
+			&.groceries{
+				background: $purple;
+			}
+			&.recreation-entertainment{
+				background: $lightgreen;
+			}
+			&.daily-needs{
+				background: $lightblue;
+			}
+			&.cafes{
+				background: $yellow;
+			}
+			&.derycleaners{
+				background: $darkgreen;
+			}
+			&.education{
+				background: $darkblue;
+			}
+		}
+
+		&:hover{
+			z-index:9999;
+			.roll-over{
+				display: block;
+			}
+		}
+		&.far-left{
+			.roll-over{
+				right: 37px;
+				left: auto;
+			}
+		}
+		&.far-top{
+			.roll-over{
+				top: 30px;
+				bottom: auto;
+			}
+		}
+	}
+	.location-count{
+		border-radius: 50%;
+		color: white;
+		display: block;
+		height: 25px;
+		width: 25px;
+		text-align: center;
+		line-height: 25px;
+
+		&.restaurants{
+			background: $orange;
+		}
+		&.shopping-centres{
+			background: $pink;
+		}
+		&.groceries{
+			background: $purple;
+		}
+		&.recreation-entertainment{
+			background: $lightgreen;
+		}
+		&.daily-needs{
+			background: $lightblue;
+		}
+		&.cafes{
+			background: $yellow;
+		}
+		&.drycleaners{
+			background: $darkgreen;
+		}
+		&.education{
+			background: $darkblue;
+		}
+	}
+}

@@ -1,0 +1,134 @@
+#location-map {
+  background: #dfdfe0;
+}
+#location-map .map-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#location-map .map-locations {
+  padding: 15px;
+  padding-top: 25px;
+  border: 1px solid black;
+  text-align: center;
+  min-height: 175px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #dfdfe0;
+}
+#location-map .image-map {
+  width: 100%;
+  max-width: 100%;
+}
+#location-map .to-metrotown {
+  display: block;
+  height: 220px;
+  left: 45.4%;
+  position: absolute;
+  top: 48.9%;
+  width: 220.4px;
+}
+#location-map .single-location {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 99;
+}
+#location-map .single-location .roll-over {
+  display: none;
+  padding: 2px;
+  position: absolute;
+  z-index: 9999;
+  left: 35px;
+  min-width: 150px;
+  bottom: 35px;
+}
+#location-map .single-location .roll-over h3 {
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  color: white;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 14px;
+}
+#location-map .single-location .roll-over.has-thumb {
+  top: -150px;
+  right: -150px;
+}
+#location-map .single-location .roll-over.has-thumb h3 {
+  position: absolute;
+}
+#location-map .single-location .roll-over.restaurants {
+  background: #ee7a3a;
+}
+#location-map .single-location .roll-over.shopping-centres {
+  background: #ee4d9b;
+}
+#location-map .single-location .roll-over.groceries {
+  background: #783887;
+}
+#location-map .single-location .roll-over.recreation-entertainment {
+  background: #58bd7d;
+}
+#location-map .single-location .roll-over.daily-needs {
+  background: #00b5e1;
+}
+#location-map .single-location .roll-over.cafes {
+  background: #ffc727;
+}
+#location-map .single-location .roll-over.derycleaners {
+  background: #00634f;
+}
+#location-map .single-location .roll-over.education {
+  background: #374ea1;
+}
+#location-map .single-location:hover {
+  z-index: 9999;
+}
+#location-map .single-location:hover .roll-over {
+  display: block;
+}
+#location-map .single-location.far-left .roll-over {
+  right: 37px;
+  left: auto;
+}
+#location-map .single-location.far-top .roll-over {
+  top: 30px;
+  bottom: auto;
+}
+#location-map .location-count {
+  border-radius: 50%;
+  color: white;
+  display: block;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+#location-map .location-count.restaurants {
+  background: #ee7a3a;
+}
+#location-map .location-count.shopping-centres {
+  background: #ee4d9b;
+}
+#location-map .location-count.groceries {
+  background: #783887;
+}
+#location-map .location-count.recreation-entertainment {
+  background: #58bd7d;
+}
+#location-map .location-count.daily-needs {
+  background: #00b5e1;
+}
+#location-map .location-count.cafes {
+  background: #ffc727;
+}
+#location-map .location-count.drycleaners {
+  background: #00634f;
+}
+#location-map .location-count.education {
+  background: #374ea1;
+}
